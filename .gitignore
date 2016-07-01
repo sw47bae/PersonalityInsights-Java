@@ -2,3 +2,4 @@ bin/
 WebContent/WEB-INF/classes
 build/
 .DS_Store
+/output/

@@ -304,6 +304,32 @@ function showVizualization(theProfile) {
       updateWordsCount();
     });
   }
+  
+  /**
+   * Kill the instance that the request is routed to.
+   * Because the xhrGet call will be routed to the application instance is a random fashion,
+   * the instance that is killed may not be the instance displayed in the button text.
+   */
+  $('.kill-instance-btn').click(function(){
+    //xhrGet(REST_DATA+"/killInstance", function(data){});
+    $.ajax({
+        headers:{
+          'csrf-token': $('meta[name="ct"]').attr('content')
+        },
+        type: 'GET',
+        url: '/api/killInstance',
+        dataType: 'json',
+    });
+  });
+  
+  /**
+   * Display instance number in the kill button.
+   */
+  $.getJSON("/instanceIndex", function(data){
+      var buttonVal = 'Kill Instance #' + data.instanceIndex;
+      console.log("demo.js: Instance ID = " + buttonVal);
+  	  $('.instance-label').prop('textContent', 'Instance #' + data.instanceIndex);
+  })
 
   onSampleTextChange();
   $content.keyup(updateWordsCount);

@@ -37,6 +37,21 @@
 							href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/gallery.html"><fmt:message key="application.label.appGallery"/></a></li>
 						<li class="top-nav--nav-item"><a
 							href="https://developer.ibm.com/watson/"><fmt:message key="application.label.community"/></a></li>
+
+	          <li class="top-nav--nav-item">
+              <div class="form-group row buttons-container">
+                <div class="instance-label" style="color:white">
+                  Instance #
+                </div>
+
+            <!--Uncomment to add instance kill -->
+                <div>
+                  <button type="button" class="btn btn-block kill-instance-btn">Kill Instance</button>
+                </div>
+              </div>
+            </li>
+            <!-- -->
+
 					</nav>
 				</div>
 			</div>
