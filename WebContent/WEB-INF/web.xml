@@ -18,6 +18,11 @@
   	<servlet-class>com.ibm.cloudoe.samples.InstanceNumServlet</servlet-class>
   	<load-on-startup>1</load-on-startup>
   </servlet>
+  <servlet>
+    <servlet-name>Instance killer</servlet-name>
+    <servlet-class>com.ibm.cloudoe.samples.KillInstanceServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
   <servlet-mapping>
     <servlet-name>Application Servlet</servlet-name>
     <url-pattern>/demo</url-pattern>
@@ -25,6 +30,10 @@
   <servlet-mapping>
   	<servlet-name>Instance helper</servlet-name>
   	<url-pattern>/instanceIndex</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Instance killer</servlet-name>
+    <url-pattern>/killInstance</url-pattern>
   </servlet-mapping>
   
 </web-app>

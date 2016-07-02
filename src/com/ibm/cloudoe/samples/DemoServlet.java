@@ -77,9 +77,11 @@ public class DemoServlet extends HttpServlet {
 		req.setCharacterEncoding("UTF-8");
 		
 		// create the request
+		logger.info("creating the request");
 		String text = req.getParameter("text");
 		String language = req.getParameter("language");
 		String locale = req.getLocale().toString().replace("_", "-");
+		logger.info("text: " + text);
 		
 		try {
 			URI profileURI = new URI(baseURL + "/v2/profile").normalize();

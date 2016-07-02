@@ -317,7 +317,7 @@ function showVizualization(theProfile) {
           'csrf-token': $('meta[name="ct"]').attr('content')
         },
         type: 'GET',
-        url: '/api/killInstance',
+        url: '/killInstance',
         dataType: 'json',
     });
   });
