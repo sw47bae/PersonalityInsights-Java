@@ -20,7 +20,7 @@ function main(msg){
     } else {
       result = body;
     };
-    whisk.done({ text: msg.text, analysis: result })
+    whisk.done({ analysis: result })
   });
 /* End using request */
 

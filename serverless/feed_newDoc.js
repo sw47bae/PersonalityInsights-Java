@@ -15,8 +15,13 @@ function main(doc) {
   if (doc._deleted) {
     console.log("[", doc._id, "] Ignored, delete");
     remove(doc);
+    whisk.done();
   } else {
-    whisk.trigger("newSpeech", doc);
+	console.log("[", doc._id, "] New or updated. Trigger newSpeech with doc");
+	whisk.trigger({
+	  name: "/iwinoto@au1.ibm.com_dev/newSpeech",
+	  parameters: doc,
+	  next: function(){ whisk.done(); }
+	});
   }
-  return whisk.done();
 }

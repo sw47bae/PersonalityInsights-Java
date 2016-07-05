@@ -1,0 +1,6 @@
+AU-SYD test:
+ab -n 1000 -c 15 -s 60 -r -p sampleText/urlencoded.txt -T application/x-www-form-urlencoded https://iw-personalityinsights-demo.au-syd.mybluemix.net/demo
+
+
+US-STH test
+ab -n 1000 -c 15 -s 60 -r -p sampleText/urlencoded.txt -T application/x-www-form-urlencoded https://iw-personalityinsights-demo.mybluemix.net/demo
