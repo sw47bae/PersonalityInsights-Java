@@ -3,3 +3,4 @@ WebContent/WEB-INF/classes
 build/
 .DS_Store
 /output/
+/.apt_generated/

@@ -1,6 +1,6 @@
 applications:
 - path: output/webApp.war
-  memory: 512M
+  memory: 320M
   instances: 1
   domain: mybluemix.net
   name: PersonalityInsights-Java

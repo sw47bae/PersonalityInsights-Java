@@ -81,7 +81,7 @@ public class DemoServlet extends HttpServlet {
 		String text = req.getParameter("text");
 		String language = req.getParameter("language");
 		String locale = req.getLocale().toString().replace("_", "-");
-		logger.info("text: " + text);
+		//logger.info("text: " + text);
 		
 		try {
 			URI profileURI = new URI(baseURL + "/v2/profile").normalize();
