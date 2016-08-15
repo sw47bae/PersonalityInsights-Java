@@ -17,11 +17,11 @@ function main(doc) {
     remove(doc);
     whisk.done();
   } else {
-	console.log("[", doc._id, "] New or updated. Trigger newSpeech with doc");
-	whisk.trigger({
-	  name: "/iwinoto@au1.ibm.com_dev/newSpeech",
-	  parameters: doc,
-	  next: function(){ whisk.done(); }
-	});
+	  console.log("[", doc._id, "] New or updated. Trigger newSpeech with doc");
+	  whisk.trigger({
+	    name: "/iwinoto@au1.ibm.com_dev/newSpeech",
+	    parameters: doc,
+	    next: function(){ whisk.done(); }
+	  });
   }
 }
