@@ -44,13 +44,13 @@
                   Instance #
                 </div>
 
-            <!--Uncomment to add instance kill -->
+            <!--Uncomment to add instance kill
                 <div>
                   <button type="button" class="btn btn-block kill-instance-btn">Kill Instance</button>
                 </div>
               </div>
             </li>
-            <!-- -->
+            -->
 
 					</nav>
 				</div>
@@ -88,7 +88,7 @@
 		<div class="row">
 			<div class="col-lg-6 col-md-12 col-xs-12">
 				<h2><fmt:message key="application.input.title"/></h2>
-				<p><fmt:message key="application.warning.minimumRecommendedWarning"/></p>                               
+				<p><fmt:message key="application.warning.minimumRecommendedWarning"/></p>
                 <p><fmt:message key="application.warning.selfReflectiveText"/></p>
 				<div class="well">
 					<div class="form-group row">
