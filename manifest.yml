@@ -2,9 +2,9 @@ applications:
 - path: output/webApp.war
   memory: 320M
   instances: 1
-  domain: mybluemix.net
+  domain: w3ibm.mybluemix.net
   name: PersonalityInsights-Java
   host: iw-personalityinsights-demo
   disk_quota: 1024M
   services:
-  - PersonalityInsights-Java-personality_insights
+  - PersonalityInsights-personality_insights
