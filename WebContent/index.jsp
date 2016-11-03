@@ -49,9 +49,10 @@
                 <div>
                   <button type="button" class="btn btn-block kill-instance-btn">Kill Instance</button>
                 </div>
+            -->
+            
               </div>
             </li>
-            -->
 
 					</nav>
 				</div>
