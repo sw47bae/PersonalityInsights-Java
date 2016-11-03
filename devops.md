@@ -45,3 +45,6 @@ We are going to modify the code to render a kill button on the page. When the us
 When the _Deploy_ stage completes, open the applciation home page and you will see a _Kill_ button on the top right of the page.
 * You can open the _Build_ stage log to see the build logs and also trace back to the code change which caused the build and deploy.
 
+# Git Issues
+**Work In Progress**
+
